@@ -1,7 +1,13 @@
 package main
 
-import "package/greeting"
+import (
+	"fmt"
+	_ "package/greeting"
+	"time"
+
+	greeting "github.com/tenntenn/greeting/v2"
+)
 
 func main() {
-	greeting.Do()
+	fmt.Println(greeting.Do(time.Now()))
 }
